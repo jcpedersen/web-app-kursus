@@ -1,0 +1,80 @@
+table
+{
+    margin:15px;
+    /*border:1px solid #ccc;*/
+    /*border-collapse:collapse;*/ /* Virker ikke med 'border-radius', undtaget IE9?? */
+    border-spacing:0px; /* Bruges i stedet for 'border-collapse:colapse' */
+}
+
+table, th, td
+{
+    padding:10px; 
+}
+
+/*  For at sætte en border på 'table' starter jeg med hjørnerne.
+    Her bruger jeg css selector 'first-child' og 'last-child' på
+    table elementerne tr, th ,td. Herefter laver jeg borders og   
+    radius på de valgte hjørner.
+*/
+table tr:first-child th:first-child /* Her vælges øverste venstre hjørne */
+{  
+	border-top-left-radius: 10px;
+	border-left:1px solid #ccc;
+	border-top:1px solid #ccc;
+}
+table tr:first-child th:last-child /* Øverste højre hjørne */
+{
+	border-top-right-radius: 10px;
+	border-right:1px solid #ccc;
+	border-top:1px solid #ccc;
+}
+table tr:last-child td:first-child /* Nederste venstre hjørne */
+{
+	border-bottom-left-radius: 10px;
+	border-left:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+table tr:last-child td:last-child /* Nederste højre hjørne */
+{
+	border-bottom-right-radius: 10px;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+
+/*  Nu har vi borders på hjørnerne og skal have sat borders på siderne. 
+    Her bruger jeg også css selector first og last child. 
+*/
+table td:first-child /* Her vælges venstre side*/
+{
+    border-left:1px solid #ccc;
+}
+table td:last-child /* Højre side */
+{
+    border-right:1px solid #ccc;
+}
+table tr th /* Øverste border*/
+{
+    border-top:1px solid #ccc;
+}
+table tr:last-child td /* Nederste border */
+{
+    border-bottom:1px solid #ccc;
+}
+
+th
+{
+    background-color:dodgerblue; /* #dddddd; */
+}
+
+/* Her laver jeg en baggrundsfarve på hveranden 'even' linje i tabellen. */
+tr:nth-child(even) 
+{
+    background:deepskyblue; /* = #00bfff;*/
+    /* background:#F2F2F2; */
+}
+
+/* Her laver jeg en baggrundsfarve på hveranden 'odd' linje i tabellen. */
+tr:nth-child(odd) 
+{
+    background:gainsboro; /* = #d2d2d2;*/
+}
