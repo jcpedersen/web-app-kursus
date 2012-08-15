@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//alert("Hello World");
+				$(".clsChangeMe").html("Hello World");
+				//alert($(".clsReadMe").text());
+				$("#idLoginAction").on("click", function(event){
+					//alert($("#idText").val());
+					$(".clsReadMe").html("Hej " + $("#idUserName").val());
+					$(".clsLoginGroup").hide();
+					//$("#idLogin").hide();
+				});
+				//$("#idLogin").on("click", function(event){
+					//event.preventDefault();
+					//$('.clsLoginBox').css({
+					//	position:'absolute',
+					//	left: ($(window).width() - $('.clsLoginBox').outerWidth())/2,
+					//	top: ($(window).height() - $('.clsLoginBox').outerHeight())/2});
+
+				//$(".clsLoginBox").show();
+
+				$("#idLogin").click(function() {
+					$(".clsLoginBox").show();
+					//$(".clsLoginBox").fadeTo("slow", 0.3);
+					$(".clsLoginBox").animate({ width: "280px", height: "150px",
+												left: "50%",
+												opacity: 1.0}, 1000);
+					//$(".clsLoginBox").fadeTo("slow", 1.0);
+				});					
+
+			});
+		</script>
+		
+		<style type="text/css">
+			.clsLoginBox {
+				background-color: red;
+				display: none;
+				height: 0;
+				width: 0;
+				position: absolute;
+				left:0; right:0;
+				margin-left: 0;
+				margin-top: 0;
+				/*
+				height: 150px;
+				width: 280px;
+				position: absolute;
+				left:50%; right:50%;
+				margin-left: -50px;
+				margin-top: -50px;
+				*/
+			}
+		</style>
+		
+		<link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap.min.css">
+		
+	</head>
+	<body>
+		<div class="clsChangeMe">New World</div>
+		<p></p>
+		<div class="clsReadMe">New World</div>
+		<p></p>
+		<a id="idLogin" class="clsLoginGroup" href="#">Login</a>
+		<div class="clsLoginBox clsLoginGroup">
+			<!-- <input id="idText" type="text" value="Who are you"> -->
+			<p>Username or Email:</p>
+			<input id="idUsername" type="text" value="Username or Email">
+			<p>Password:</p>
+			<input id="idPassword" type="password">
+			<!-- <input id="idRun" type="submit" value="Run"> -->
+			<button id="idLoginAction" class="btn-success" url="" >
+				<span>Login</span>
+			</button>
+		</div>
+	</body>
+</html>
