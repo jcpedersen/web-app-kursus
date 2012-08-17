@@ -1,0 +1,65 @@
+<html>
+<head>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+ 
+    <script type="text/javascript">
+
+	var multiArray = new Array(16);
+	for (i=0; i<16; i++) {
+		multiArray[i] = new Array(3);
+		multiArray[i]["DK"] = "Jeg er tekstlinie nummer  " + i + " af mange.";
+		multiArray[i]["UK"] = "I am text line number " + i + " out of many.";
+		multiArray[i]["DE"] = "Ich bin text teile nummer " + i + " von vielen.";
+	}
+
+	$(document).ready(function() {
+		/*$(document).on("click",function(event) { */
+ 		$("select").click(function(event){
+			console.dir(event);
+			var language =  $(this).val();
+/* Metode nr. 1:
+			$("#container > div").each(function (i,elem) {
+				$(elem).html(multiArray[i][language]);
+			});
+*/
+/* Metode nr. 2 */
+			$("div:gt(0)").each(function (i, elem) {
+				$(elem).html(multiArray[i][language]);
+			});
+			
+		});
+
+	});
+
+	</script>
+	
+ </head>
+ 
+ <body>
+	<select>
+		<option value="DK">Danish</option>
+		<option value="UK">English</option>
+		<option value="DE">German</option>
+	</select>
+	</br></br></br></br>
+ 	<div id="container"> Oversat tekst:
+		<div>Tekst 0</div>
+		<div>Tekst 1</div>		
+		<div>Tekst 2</div>
+		<div>Tekst 3</div>
+		<div>Tekst 4</div>
+		<div>Tekst 5</div>
+		<div>Tekst 6</div>
+		<div>Tekst 7</div>
+		<div>Tekst 8</div>
+		<div>Tekst 9</div>
+		<div>Tekst 10</div>
+		<div>Tekst 11</div>
+		<div>Tekst 12</div>
+		<div>Tekst 13</div>
+		<div>Tekst 14</div>	
+		<div>Tekst 15</div>		
+ 	</div>
+ </body>
+ </html>
+ 

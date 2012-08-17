@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+
+		function buttonFunction() {
+			alert("You pressed the " + cButton + "!");		
+		}
+
+		$(document).ready(function() {
+
+			$("#primaryButton").on("click",function(event) {
+				event.preventDefault();
+				buttonFunction();
+				// skal vi have mere her?
+			});
+		
+		});
+		</script>
+		
+		<style type="text/css">
+		.someClass {
+			/* Define some styling for this class */
+		}
+		</style>
+		
+		<link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap.min.css">
+		
+	</head>
+	<body>
+
+	<!-- Add data-toggle="button" to activate toggling on a single button -->
+	<button class="btn" data-toggle="button">Single Toggle</button>
+	</br></br>
+	
+	<!-- Add data-toggle="buttons-checkbox" for checkbox style toggling on btn-group -->
+	<div class="btn-group" data-toggle="buttons-checkbox">
+	  <button class="btn-primary btn-mini">1.Primary</button>
+	  <button class="btn-warning btn-mini">2.Warning</button>
+	  <button class="btn-danger  btn-mini">3.Danger</button>
+	  <button class="btn-success btn-mini">4.Success</button>
+	  <button class="btn-info    btn-mini">5.Info</button>
+	  <button class="btn-inverse btn-mini">6.Inverse</button>
+	</div>
+	</br>
+	 
+	<!-- Add data-toggle="buttons-radio" for radio style toggling on btn-group -->
+	<div class="btn-group" data-toggle="buttons-radio">
+	  <button class="btn-primary btn-small" id="primaryButton" type="submit">1.Primary</button>
+	  <button class="btn-warning btn-small">2.Warning</button>
+	  <button class="btn-danger  btn-small">3.Danger</button>
+	  <button class="btn-success btn-small">4.Success</button>
+	  <button class="btn-info    btn-small">5.Info</button>
+	  <button class="btn-inverse btn-small">6.Inverse</button>
+	</div>
+	</br>
+
+	<!-- Add data-toggle="buttons-radio" for radio style toggling on btn-group -->
+	<div class="btn-group" data-toggle="buttons-radio">
+	  <button class="btn-primary btn-large">1.Primary</button>
+	  <button class="btn-warning btn-large">2.Warning</button>
+	  <button class="btn-danger  btn-large">3.Danger</button>
+	  <button class="btn-success btn-large">4.Success</button>
+	  <button class="btn-info    btn-large">5.Info</button>
+	  <button class="btn-inverse btn-large">6.Inverse</button>
+	</div>
+	</br>
+
+	</body>
+</html>
