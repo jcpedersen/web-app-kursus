@@ -1,0 +1,36 @@
+Robot Table:
+robotID         int (Prim Key) (Auto inc)
+robotNavn       nvarchar(MAX)
+robotTab        int
+robotSejre      int
+robotLiv        int
+robotUafgjurt   int
+
+  Tabel:
+robotID     int (Prim Key)
+rundeID     int (Prim Key)
+skjold      int
+vaaben      int
+
+xmlRead+
+xmlWrite+
+dbRead+
+dbWrite+
+
+//Program
+class Robot:
+    SetGetSkjold,SetGetVaaben
+    SetGetLife
+    SetGetLost
+    SetGetWin
+    SetGetDraw
+    
+    LoadCurrentRobot
+    SaveCurrentRobot
+    
+//Fight
+fight(r1,r2)
+getResultAsJSon
+
+
+    
