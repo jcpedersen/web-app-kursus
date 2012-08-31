@@ -1,5 +1,0 @@
-C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\ajaxFollowMe-Step\3) ajaxFollowMe-preventDefault+button\ajaxFollowMe\bin\ajaxFollowMe.dll
-C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\ajaxFollowMe-Step\3) ajaxFollowMe-preventDefault+button\ajaxFollowMe\bin\ajaxFollowMe.pdb
-C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\ajaxFollowMe-Step\3) ajaxFollowMe-preventDefault+button\ajaxFollowMe\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\ajaxFollowMe-Step\3) ajaxFollowMe-preventDefault+button\ajaxFollowMe\obj\Debug\ajaxFollowMe.dll
-C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\ajaxFollowMe-Step\3) ajaxFollowMe-preventDefault+button\ajaxFollowMe\obj\Debug\ajaxFollowMe.pdb

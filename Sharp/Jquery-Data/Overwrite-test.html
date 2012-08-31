@@ -1,0 +1,38 @@
+<html>
+<head>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+ 
+    <script type="text/javascript">
+         $(document).ready(function() {
+			
+			$(document).on("click",function(event) {
+				var allowClick =  $(event.target).data("allowclick");
+				var allowCopy =  $(event.target).data("allowcopy");
+				var isSafe =  $(event.target).data("safe");
+				
+				//$(event.target).data("safe", "False"); //Cheating!
+				
+				if (allowClick == "True" && allowCopy == "True")
+				{
+					$("#currentText").html($(event.target).text());
+				//	alert(currentText);
+				}
+				else if (allowClick == "True" && isSafe == "False")
+					$(event.target).html(currentText);
+					//document.getElementById("currentText").innerHTML = $(event.target).html(currentText);
+			});
+		 
+		 });
+     </script>		 
+ </head>
+ 
+ <body>
+		<div data-allowClick="True" data-safe="True" data-AllowCopy="False">I have some nice text here.</div>
+		<div data-allowClick="True" data-safe="False" data-allowCopy="False">I dont like my text (click here, and it will be removed or replaced!).</div>
+		<div data-allowClick="True" data-safe="True" data-AllowCopy="True">I love to share my text with others.</div>
+		<div data-allowClick="True" data-safe="True" data-AllowCopy="True" data-force="True" >HA... I WILL OVERWRITE YOU!</div>
+			
+		<div id="currentText"></div>
+ </body>
+ </html>
+ 

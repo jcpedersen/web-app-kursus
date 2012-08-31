@@ -1,0 +1,5 @@
+c:\users\administrator.win-s127s1mfgjv\documents\visual studio 2010\Projects\ajaxFollowMe\ajaxFollowMe\bin\ajaxFollowMe.dll
+c:\users\administrator.win-s127s1mfgjv\documents\visual studio 2010\Projects\ajaxFollowMe\ajaxFollowMe\bin\ajaxFollowMe.pdb
+c:\users\administrator.win-s127s1mfgjv\documents\visual studio 2010\Projects\ajaxFollowMe\ajaxFollowMe\obj\Debug\ResolveAssemblyReference.cache
+c:\users\administrator.win-s127s1mfgjv\documents\visual studio 2010\Projects\ajaxFollowMe\ajaxFollowMe\obj\Debug\ajaxFollowMe.dll
+c:\users\administrator.win-s127s1mfgjv\documents\visual studio 2010\Projects\ajaxFollowMe\ajaxFollowMe\obj\Debug\ajaxFollowMe.pdb
