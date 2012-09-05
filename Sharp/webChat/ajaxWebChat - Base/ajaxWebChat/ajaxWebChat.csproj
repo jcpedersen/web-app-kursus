@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20724F3E-AE96-46C7-8B64-951DC86F0CC8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ajaxWebChat</RootNamespace>
+    <AssemblyName>ajaxWebChat</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax\ajaxMsgLoad.aspx" />
+    <Content Include="ajax\ajaxMsgSave.aspx" />
+    <Content Include="assets\css\bootstrap-responsive.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\docs.css" />
+    <Content Include="assets\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="assets\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="assets\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="assets\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="assets\ico\favicon.ico" />
+    <Content Include="assets\img\bird.png" />
+    <Content Include="assets\img\browsers.png" />
+    <Content Include="assets\img\github-16px.png" />
+    <Content Include="assets\img\glyphicons-halflings-white.png" />
+    <Content Include="assets\img\glyphicons-halflings.png" />
+    <Content Include="assets\img\glyphicons\glyphicons_009_magic.png" />
+    <Content Include="assets\img\glyphicons\glyphicons_042_group.png" />
+    <Content Include="assets\img\glyphicons\glyphicons_079_podium.png" />
+    <Content Include="assets\img\glyphicons\glyphicons_082_roundabout.png" />
+    <Content Include="assets\img\glyphicons\glyphicons_155_show_thumbnails.png" />
+    <Content Include="assets\img\glyphicons\glyphicons_163_iphone.png" />
+    <Content Include="assets\img\glyphicons\glyphicons_214_resize_small.png" />
+    <Content Include="assets\img\glyphicons\glyphicons_266_book_open.png" />
+    <Content Include="assets\img\grid-18px-masked.png" />
+    <Content Include="assets\img\icon-css3.png" />
+    <Content Include="assets\img\icon-github.png" />
+    <Content Include="assets\img\icon-html5.png" />
+    <Content Include="assets\img\icon-twitter.png" />
+    <Content Include="assets\img\less-logo-large.png" />
+    <Content Include="assets\img\less-small.png" />
+    <Content Include="assets\img\responsive-illustrations.png" />
+    <Content Include="assets\js\application.js" />
+    <Content Include="assets\js\bootstrap-alert.js" />
+    <Content Include="assets\js\bootstrap-button.js" />
+    <Content Include="assets\js\bootstrap-carousel.js" />
+    <Content Include="assets\js\bootstrap-collapse.js" />
+    <Content Include="assets\js\bootstrap-dropdown.js" />
+    <Content Include="assets\js\bootstrap-modal.js" />
+    <Content Include="assets\js\bootstrap-popover.js" />
+    <Content Include="assets\js\bootstrap-scrollspy.js" />
+    <Content Include="assets\js\bootstrap-tab.js" />
+    <Content Include="assets\js\bootstrap-tooltip.js" />
+    <Content Include="assets\js\bootstrap-transition.js" />
+    <Content Include="assets\js\bootstrap-typeahead.js" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\google-code-prettify\prettify.css" />
+    <Content Include="assets\js\google-code-prettify\prettify.js" />
+    <Content Include="assets\js\jquery.js" />
+    <Content Include="style\chatStyle.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="webChat.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajax\ajaxMsgLoad.aspx.cs">
+      <DependentUpon>ajaxMsgLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\ajaxMsgLoad.aspx.designer.cs">
+      <DependentUpon>ajaxMsgLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\ajaxMsgSave.aspx.cs">
+      <DependentUpon>ajaxMsgSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\ajaxMsgSave.aspx.designer.cs">
+      <DependentUpon>ajaxMsgSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="webChat.aspx.cs">
+      <DependentUpon>webChat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webChat.aspx.designer.cs">
+      <DependentUpon>webChat.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\js\README.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52339</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
