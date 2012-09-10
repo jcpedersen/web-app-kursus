@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>jQuery UI Slider - Snap to increments</title>
+	<link rel="stylesheet" href="jquery.ui.all.css">
+	<script src="jquery-1.7.2.js"></script>
+	<script src="jquery.ui.core.js"></script>
+	<script src="jquery.ui.widget.js"></script>
+	<script src="jquery.ui.mouse.js"></script>
+	<script src="jquery.ui.tabs.js"></script>
+	<script src="jquery.ui.slider.js"></script>
+	<link rel="stylesheet" href="demos.css">
+	<style>
+	#demo-frame > div.demo { padding: 10px !important; }
+	</style>
+	<script>
+	$(function() {
+		$( "#tabs" ).tabs({
+			select: function( event, ui ) {
+				$( "#slider" ).slider( "value", ui.index );
+			}
+		});
+		$( "#slider" ).slider({
+			min: 0,
+			max: $( "#tabs" ).tabs( "length" ) - 1,
+			slide: function( event, ui ) {
+				$( "#tabs" ).tabs( "select", ui.value );
+			}
+		});
+	});
+	</script>
+</head>
+<body>
+
+<div class="demo">
+
+<div id="slider" style="width:100px"></div>
+
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Nunc tincidunt</a></li>
+		<li><a href="#tabs-2">Proin dolor</a></li>
+		<li><a href="#tabs-3">Aenean lacinia</a></li>
+		<li><a href="#tabs-4">SomeThing more</a></li>
+	</ul>
+	<div id="tabs-1">
+		<p>1</p>
+	</div>
+	<div id="tabs-2">
+		<p>2</p>
+	</div>
+	<div id="tabs-3">
+		<p>3</p>
+	</div>
+	<div id="tabs-4">
+		<p>4</p>
+	</div>
+	</div>
+
+</div><!-- End demo -->
+
+
+
+<div class="demo-description">
+<p>Control tabs with a slider.</p>
+</div><!-- End demo-description -->
+
+</body>
+</html>

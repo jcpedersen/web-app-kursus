@@ -1,0 +1,142 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Tabs Styling</title>
+<link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/south-street/ui.all.css" rel="stylesheet">
+<style type="text/css">
+
+
+#tabs-right {
+	position: relative;
+	padding-right: -50.5em;
+}
+#tabs-right .ui-tabs-nav {
+	position: absolute;
+	right: 0.0em;
+	top: 0.0em;
+	bottom: 0.25em;
+	width: 10em;
+	padding: 0.2em 0.2em 0.2em 0em;
+}
+#tabs-right .ui-tabs-nav li {
+	width: 100%;
+	border-left: none;
+	border-bottom-width: 1px !important;
+	-moz-border-radius: 0px 8px 8px 0px;
+	-webkit-border-radius: 0px 8px 8px 0px;
+	border-radius: 0px 8px 8px 0px;
+	overflow: hidden;
+}
+#tabs-right .ui-tabs-nav li.ui-tabs-selected {
+	left: -1px;
+	border-left: 0px solid transparent;
+	
+}
+#tabs-right .ui-tabs-nav li a {
+	width: 100%;
+}
+#tabs-right > div {
+	height: 12.3em;
+}
+.tab-red{
+background-color:red;
+}
+
+#tabs-right-1{
+background-color:red;
+}
+
+.tab-blue{
+background-color:blue;
+}
+
+#tabs-right-2{
+background-color:blue;
+}
+.tab-green{
+background-color:green;
+}
+
+#tabs-right-3{
+background-color:green;
+}
+
+.tab-brown{
+background-color:brown;
+}
+
+#tabs-right-4{
+background-color:brown;
+}
+
+.tab-yellow{
+background-color:yellow;
+}
+
+#tabs-right-5{
+background-color:yellow;
+}
+
+.tab-black{
+background-color:black;
+}
+
+#tabs-right-6{
+background-color:black;
+}
+ui-tabs-nav {
+   background: transparent;
+    border-width: 0px 0px 1px 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css">
+div.showCode {
+	font-size: 0.8em;
+}
+</style>
+<![endif]-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('div.tabs').tabs();
+});
+</script>
+</head>
+<body>
+<h1>jTabs Styling</h1>
+<div> This out side
+<div id="tabs-right" class="tabs">
+	<ul>
+		<li><a href="#tabs-right-1" name="tabs-right" class="tab-red">First</a></li>
+		<li><a href="#tabs-right-2" class="tab-blue">Second</a></li>
+		<li><a href="#tabs-right-3" class="tab-green">Third</a></li>
+		<li><a href="#tabs-right-4" class="tab-brown" name="tabs-right">Fourth</a></li>
+		<li><a href="#tabs-right-5" class="tab-yellow">Fifth</a></li>
+		<li><a href="#tabs-right-6" class="tab-black">Sixth</a></li>
+	</ul>
+	<div id="tabs-right-1" class="tab-red">
+		<p>Tabs on the right.</p>
+	     Page 1
+	</div>
+	<div id="tabs-right-2">
+		Page 2
+	</div>
+	<div id="tabs-right-3">
+		Page 3
+	</div>
+	<div id="tabs-right-4">
+		Page 4
+	</div>
+	<div id="tabs-right-5">
+		Page 5
+	</div>
+	<div id="tabs-right-6">
+		Page 6
+	</div>
+</div>
+</div>
+</body>
+</html>
