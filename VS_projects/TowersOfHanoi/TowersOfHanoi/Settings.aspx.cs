@@ -7,11 +7,13 @@ using System.Web.UI.WebControls;
 
 namespace TowersOfHanoi
 {
-    public partial class Help : System.Web.UI.Page
+    public partial class Settings : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
+
+
     }
 }

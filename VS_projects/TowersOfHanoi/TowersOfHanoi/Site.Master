@@ -31,9 +31,9 @@
             <div class="clear hideSkiplink">
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
-                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/TowersOfHanoi.aspx" Text="Towers of Hanoi"/>
+                        <asp:MenuItem NavigateUrl="~/Settings.aspx" Text="Settings" />
                         <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
-                        <asp:MenuItem NavigateUrl="~/Help.aspx" Text="Help" />
                     </Items>
                 </asp:Menu>
             </div>

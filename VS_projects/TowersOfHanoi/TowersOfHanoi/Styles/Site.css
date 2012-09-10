@@ -99,7 +99,7 @@ first child of the left and right table columns */
     position: relative;
     margin: 0px;
     padding: 0px;
-    background: #4b6c9e;
+    background: #DAFF9F;
     width: 100%;
 }
 
@@ -108,7 +108,7 @@ first child of the left and right table columns */
     font-weight: 700;
     margin: 0px;
     padding: 0px 0px 0px 20px;
-    color: #f9f9f9;
+    color: #303030;
     border: none;
     line-height: 2em;
     font-size: 2em;
