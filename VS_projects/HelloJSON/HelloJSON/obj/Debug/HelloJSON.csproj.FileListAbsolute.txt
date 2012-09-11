@@ -1,0 +1,5 @@
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\HelloJSON\HelloJSON\bin\HelloJSON.dll
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\HelloJSON\HelloJSON\bin\HelloJSON.pdb
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\HelloJSON\HelloJSON\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\HelloJSON\HelloJSON\obj\Debug\HelloJSON.dll
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\HelloJSON\HelloJSON\obj\Debug\HelloJSON.pdb
