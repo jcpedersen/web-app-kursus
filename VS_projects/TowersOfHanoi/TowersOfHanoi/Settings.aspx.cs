@@ -14,6 +14,20 @@ namespace TowersOfHanoi
 
         }
 
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string msg = "";
+            foreach (ListItem li in DropDownList1.Items)
+            {
+                if (li.Selected == true)
+                {
+                    msg += "<BR>" + li.Text + " was selected.";
+                }
+            }
+            Label1.Text = msg;
+
+        }
+
 
     }
 }
