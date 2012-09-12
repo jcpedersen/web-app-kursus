@@ -1,0 +1,8 @@
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\MvcApplication2\MvcApplication2.Tests\bin\Debug\MvcApplication2.Tests.dll.config
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\MvcApplication2\MvcApplication2.Tests\bin\Debug\MvcApplication2.Tests.dll
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\MvcApplication2\MvcApplication2.Tests\bin\Debug\MvcApplication2.Tests.pdb
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\MvcApplication2\MvcApplication2.Tests\bin\Debug\MvcApplication2.dll
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\MvcApplication2\MvcApplication2.Tests\bin\Debug\MvcApplication2.pdb
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\MvcApplication2\MvcApplication2.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\MvcApplication2\MvcApplication2.Tests\obj\Debug\MvcApplication2.Tests.dll
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\MvcApplication2\MvcApplication2.Tests\obj\Debug\MvcApplication2.Tests.pdb

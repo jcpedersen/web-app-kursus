@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<title>Towers of Hanoi - using jQuery UI</title>
+<link rel="stylesheet" href="../../themes/base/jquery.ui.all.css">
+<script src="../../jquery-1.8.0.js"></script>
+<script src="../../ui/jquery.ui.core.js"></script>
+<script src="../../ui/jquery.ui.widget.js"></script>
+<script src="../../ui/jquery.ui.mouse.js"></script>
+<script src="../../ui/jquery.ui.draggable.js"></script>
+<script src="../../ui/jquery.ui.droppable.js"></script>
+<link rel="stylesheet" href="../demos.css">
+
+<style type="text/css">
+	p.clear { clear: both; }
+	h1 {text-align: left}  /* or center ? */
+	li {margin: 0 0 0 2em; list-style-type: square;}  /* or circle ? */
+	
+	.draggable { width: 100px; height: 18px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+	.droppable { width: 170px; height: 200px; padding: 0.5em; float: left; margin: 10px; }
+	.tower_base { left:   5px; top: 185px; width: 160px; height:   2px; border: 1px solid black; background-color:blue }
+	.tower_rod  { left:  80px; top:  22px; width:   2px; height: 160px; border: 1px solid black; background-color:blue }
+	#tower1base { position:relative; }
+	#tower1rod  { position:relative; }
+	#tower2base { position:relative; }
+	#tower2rod  { position:relative; }
+	#tower3base { position:relative; }
+	#tower3rod  { position:relative; }
+
+	.disk { margin: 0px 0px; }
+	#disk1 { width: 40px; left: 58px; top: -133px; background: red}
+	#disk2 { width: 50px; left:  2px; top: -103px; background: green}
+	#disk3 { width: 60px; left: 51px; top: -102px; background: blue}
+	#disk4 { width: 70px; left: -25px; top: -71px; background: orange}
+	#disk5 { width: 80px; left: 43px; top: -71px; background: yellow}
+</style>
+	
+<script>
+	$(function() {
+		//$( "#disk1" ).draggable({ revert: "valid" });
+		$(".draggable").draggable({ revert: "invalid" });
+
+		$(".droppable").droppable({
+			activeClass: "ui-state-hover",
+			hoverClass: "ui-state-active",
+			drop: function( event, ui ) {
+				console.log("Break here on drop!");
+				$(this)
+					//.addClass( "ui-state-highlight" )
+					.find( "p" )
+					.html( "Dropped!" );
+			}
+		});
+	});
+</script>
+</head>
+
+<body>
+
+<div class="demo">
+
+<h1>Towers of Hanoi</h1>
+
+<p class="towers">	
+<div id="tower1" class="droppable ui-widget-header">
+	<div id="tower1base" class="tower_base" ></div>
+	<div id="tower1rod"  class="tower_rod" ></div>
+	<div id="disk1" class="disk draggable ui-widget-content">
+		<p>Disk 1</p>
+	</div>
+	<div id="disk2" class="disk draggable ui-widget-content">
+		<p>Disk 2</p>
+	</div>
+	<div id="disk3" class="disk draggable ui-widget-content">
+		<p>Disk 3</p>
+	</div>
+	<div id="disk4" class="disk draggable ui-widget-content">
+		<p>Disk 4</p>
+	</div>
+	<div id="disk5" class="disk draggable ui-widget-content">
+		<p>Disk 5</p>
+	</div>
+	<p>Tower 1</p>
+</div>
+
+<div id="tower2" class="droppable ui-widget-header">
+	<div id="tower2base" class="tower_base" ></div>
+	<div id="tower2rod"  class="tower_rod" ></div>
+	<p>Tower 2</p>
+</div>
+
+<div id="tower3" class="droppable ui-widget-header">
+	<div id="tower3base" class="tower_base" ></div>
+	<div id="tower3rod"  class="tower_rod" ></div>
+	<p>Tower 3</p>
+</div>
+</p>
+
+<!-- Disks to be placed on the rods -->
+<p class="clear">
+</p>
+
+</div><!-- End demo -->
+
+
+
+<div class="demo-description">
+<p>
+<strong>The objective of this puzzle is to move the entire stack of disks to another rod, obeying the following rules:</strong>
+<br />
+    <li>Only one disk may be moved at a time.</li>
+    <li>Each move consists of taking the upper disk from one of the rods and sliding it onto another rod, on top of the other disks that may already be present on that rod.</li>
+    <li>No disk may be placed on top of a smaller disk.</li>
+</p>
+</div><!-- End demo-description -->
+
+</body>
+</html>
