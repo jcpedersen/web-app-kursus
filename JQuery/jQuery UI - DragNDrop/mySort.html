@@ -20,6 +20,18 @@ body
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11px;
 }
+
+.headLines
+{
+	text-align: center;
+}
+
+.bottomText
+{
+	width: 98%
+	text-align: left;
+}
+
 .groupWrapper
 {
 	width: 24%;
@@ -70,8 +82,8 @@ body
 #disk3 { width: 70%; margin-left: 15%; background: blue}
 #disk4 { width: 75%; margin-left: 12.5%; background: orange}
 #disk5 { width: 80%; margin-left: 10%; background: yellow}
-#disk6 { width: 85%; margin-left: 7.5%; background: yellow}
-#disk7 { width: 90%; margin-left: 5%; background: yellow}
+#disk6 { width: 85%; margin-left: 7.5%; background: white}
+#disk7 { width: 90%; margin-left: 5%; background: white}
 
 .serializer
 {
@@ -87,6 +99,12 @@ body
 </head>
 
 <body>
+<div id="header1" class="headLines">
+<h1>Tower of Hanoi</h1>
+<h2>Puzzle</h2>
+<hr/>
+</div>
+
 <div id="sort1" class="groupWrapper">
 	<div id="disk1" class="groupItem">
 		<div class="itemHeader">Disk #1</div>
@@ -126,20 +144,57 @@ body
 </div>
 
 <div id="sort2" class="groupWrapper">
+	<div id="disk21" class="groupItem hidden">
+		<div class="itemHeader">Disk #21</div>
+	</div>
+	<div id="disk22" class="groupItem hidden">
+		<div class="itemHeader">Disk #22</div>
+	</div>
+	<div id="disk23" class="groupItem hidden">
+		<div class="itemHeader">Disk #23</div>
+	</div>
+	<div id="disk24" class="groupItem hidden">
+		<div class="itemHeader">Disk #24</div>
+	</div>
 </div>
 
 <div id="sort3" class="groupWrapper">
+	<div id="disk31" class="groupItem hidden">
+		<div class="itemHeader">Disk #31</div>
+	</div>
+	<div id="disk32" class="groupItem hidden">
+		<div class="itemHeader">Disk #32</div>
+	</div>
+	<div id="disk33" class="groupItem hidden">
+		<div class="itemHeader">Disk #33</div>
+	</div>
+	<div id="disk34" class="groupItem hidden">
+		<div class="itemHeader">Disk #34</div>
+	</div>
 </div>
 
+
+<p>
+<strong>The objective of this puzzle is to move the entire stack to another rod (the 3rd), obeying the following rules:</strong>
+<li>Only one disk may be moved at a time.</li>
+<li>Each move consists of taking the upper disk from one of the rods and sliding it onto another rod, on top of the other disks that may already be present on that rod.</li>
+<li>No disk may be placed on top of a smaller disk.</li>
+</p>
+
+<div id="buttom1" class="bottomText">
+<hr/>
+	<div id="info1" class="debug">Debug text here</div>
+<hr/>
+</div>
 
 <script type="text/javascript">
 
 $(document).ready(
 	function () {
-	$('#disk6').hide(); //Default 5 disks
-	$('#disk7').hide();
+		$('#disk6').hide(); //Default 5 disks
+		$('#disk7').hide();
 
-	moveElem();
+		moveElem();
 	}
 );
 
@@ -152,15 +207,17 @@ function moveElem() {
 			hoverclass: 'sortablehover',
 			handle: 'div.itemHeader',
 			tolerance: 'pointer',
-			onChange: function(ser)
+			change: function(ser)
 			{
 			},
-			onStart: function()
+			start: function()
 			{
+				$('div.debug').html("start function active");
 				$.iAutoscroller.start(this, document.getElementsByTagName('body'));
 			},
-			onStop: function()
+			stop: function()
 			{
+				$('div.debug').html("stop function active");
 				$.iAutoscroller.stop();
 				
 			}
