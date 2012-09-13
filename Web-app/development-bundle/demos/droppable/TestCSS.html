@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<title>CSS test positions</title>
+<link rel="stylesheet" href="../../themes/base/jquery.ui.all.css">
+<link rel="stylesheet" href="../demos.css">
+
+<style type="text/css">
+	p.clear { clear: both; }
+	h1 {text-align: left}  /* or center ? */
+	li {margin: 0 0 0 2em; list-style-type: square;}  /* or circle ? */
+
+	.draggable { height: 18px; padding: 0.5em; margin: 0px 5px 0px; }
+	.droppable { width: 170px; height: 200px; padding: 0.5em; margin: 10px; }
+	
+	.disk { position:relative; margin-right:auto; }
+	#disk1 { width: 40px; left: 60px; top: 10px; background: red}
+	#disk2 { width: 50px; left: 55px; top: 10px; background: green}
+	#disk3 { width: 60px; left: 50px; top: 10px; background: blue}
+	#disk4 { width: 70px; left: 45px; top: 10px; background: orange}
+	#disk5 { width: 80px; left: 40px; top: 10px; background: yellow}
+</style>
+	
+</head>
+
+<body>
+
+<div class="demo">
+
+<h1>Towers of Hanoi</h1>
+
+<p class="towers">	
+<div id="tower1" class="droppable ui-widget-header">
+	<div id="disk1" class="disk draggable ui-widget-content">
+		<p>Disk 1</p>
+	</div>
+	<div id="disk2" class="disk draggable ui-widget-content">
+		<p>Disk 2</p>
+	</div>
+	<div id="disk3" class="disk draggable ui-widget-content">
+		<p>Disk 3</p>
+	</div>
+	<div id="disk4" class="disk draggable ui-widget-content">
+		<p>Disk 4</p>
+	</div>
+	<div id="disk5" class="disk draggable ui-widget-content">
+		<p>Disk 5</p>
+	</div>
+</div>
+<p><h2>Tower 1</h2></p>
+
+</p>
+
+<!-- Disks to be placed on the rods -->
+<p class="clear">
+</p>
+
+</div><!-- End demo -->
+
+
+
+
+</body>
+</html>

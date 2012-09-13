@@ -16,41 +16,32 @@
 <style type="text/css">
 	p.clear { clear: both; }
 	h1 {text-align: left}  /* or center ? */
+	h2 {position:relative; text-align: center; bottom: 0; }
 	li {margin: 0 0 0 2em; list-style-type: square;}  /* or circle ? */
 	
-	.draggable { width: 100px; height: 18px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
-	.droppable { width: 170px; height: 200px; padding: 0.5em; float: left; margin: 10px; }
-	.tower_base { left:   5px; top: 185px; width: 160px; height:   2px; border: 1px solid black; background-color:blue }
-	.tower_rod  { left:  80px; top:  22px; width:   2px; height: 160px; border: 1px solid black; background-color:blue }
-	#tower1base { position:relative; }
-	#tower1rod  { position:relative; }
-	#tower2base { position:relative; }
-	#tower2rod  { position:relative; }
-	#tower3base { position:relative; }
-	#tower3rod  { position:relative; }
+	.tower { float: left; width: 170px; height: 200px; padding: 0.5em; margin: 10px; }
 
-	.disk { margin: 0px 0px; }
-	#disk1 { width: 40px; left: 58px; top: -133px; background: red}
-	#disk2 { width: 50px; left:  2px; top: -103px; background: green}
-	#disk3 { width: 60px; left: 51px; top: -102px; background: blue}
-	#disk4 { width: 70px; left: -25px; top: -71px; background: orange}
-	#disk5 { width: 80px; left: 43px; top: -71px; background: yellow}
+	.disk { position:relative; margin-right:auto; height: 18px; padding: 0.5em; }
+	#disk1 { width: 40px; left: 60px; top: 10px; background: red}
+	#disk2 { width: 50px; left: 55px; top: 10px; background: green}
+	#disk3 { width: 60px; left: 50px; top: 10px; background: blue}
+	#disk4 { width: 70px; left: 45px; top: 10px; background: orange}
+	#disk5 { width: 80px; left: 40px; top: 10px; background: yellow}
 </style>
 	
 <script>
 	$(function() {
 		//$( "#disk1" ).draggable({ revert: "valid" });
-		$(".draggable").draggable({ revert: "invalid" });
+		$(".disk").draggable({ revert: "invalid" });
 
-		$(".droppable").droppable({
+		$(".tower").droppable({
 			activeClass: "ui-state-hover",
 			hoverClass: "ui-state-active",
 			drop: function( event, ui ) {
 				console.log("Break here on drop!");
 				$(this)
 					//.addClass( "ui-state-highlight" )
-					.find( "p" )
-					.html( "Dropped!" );
+					.find( "p" ).html( "Dropped!" );
 			}
 		});
 	});
@@ -64,36 +55,30 @@
 <h1>Towers of Hanoi</h1>
 
 <p class="towers">	
-<div id="tower1" class="droppable ui-widget-header">
-	<div id="tower1base" class="tower_base" ></div>
-	<div id="tower1rod"  class="tower_rod" ></div>
-	<div id="disk1" class="disk draggable ui-widget-content">
+<div id="tower1" class="tower ui-widget-header">
+	<div id="disk1" class="disk ui-widget-content">
 		<p>Disk 1</p>
 	</div>
-	<div id="disk2" class="disk draggable ui-widget-content">
+	<div id="disk2" class="disk ui-widget-content">
 		<p>Disk 2</p>
 	</div>
-	<div id="disk3" class="disk draggable ui-widget-content">
+	<div id="disk3" class="disk ui-widget-content">
 		<p>Disk 3</p>
 	</div>
-	<div id="disk4" class="disk draggable ui-widget-content">
+	<div id="disk4" class="disk ui-widget-content">
 		<p>Disk 4</p>
 	</div>
-	<div id="disk5" class="disk draggable ui-widget-content">
+	<div id="disk5" class="disk ui-widget-content">
 		<p>Disk 5</p>
 	</div>
-	<p>Tower 1</p>
+	<p><h2>Tower 1</h2></p>
 </div>
 
-<div id="tower2" class="droppable ui-widget-header">
-	<div id="tower2base" class="tower_base" ></div>
-	<div id="tower2rod"  class="tower_rod" ></div>
-	<p>Tower 2</p>
+<div id="tower2" class="tower ui-widget-header">
+	<p><h2>Tower 2</h2></p>
 </div>
 
-<div id="tower3" class="droppable ui-widget-header">
-	<div id="tower3base" class="tower_base" ></div>
-	<div id="tower3rod"  class="tower_rod" ></div>
+<div id="tower3" class="tower ui-widget-header">
 	<p>Tower 3</p>
 </div>
 </p>

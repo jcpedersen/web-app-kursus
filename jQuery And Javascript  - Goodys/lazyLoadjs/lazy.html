@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>the title</title>
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>   <script type="text/javascript" language="javascript">
+   $(document).ready(function() {
+      $("#driver").click(function(event){
+          $.getScript('lazy.js', function(jd) {
+              // Call custom function defined in script
+              CheckJS();
+          });
+      });
+   });
+   </script>
+</head>
+<body>
+   <p>Click on the button to load result.js file:</p>
+   <div id="stage" style="background-color:blue;">
+          STAGE
+   </div>
+   <input type="button" id="driver" value="Load Data" />
+</body>
+</html>

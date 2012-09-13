@@ -12,11 +12,11 @@
 
     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" 
         onselectedindexchanged="DropDownList1_SelectedIndexChanged">
-        <asp:ListItem Selected="True">3</asp:ListItem>
-        <asp:ListItem>4</asp:ListItem>
-        <asp:ListItem>5</asp:ListItem>
-        <asp:ListItem>6</asp:ListItem>
-        <asp:ListItem>7</asp:ListItem>
+        <asp:ListItem Selected="True"> 3</asp:ListItem>
+        <asp:ListItem> 4</asp:ListItem>
+        <asp:ListItem> 5</asp:ListItem>
+        <asp:ListItem> 6</asp:ListItem>
+        <asp:ListItem> 7</asp:ListItem>
     </asp:DropDownList>
   
     <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
