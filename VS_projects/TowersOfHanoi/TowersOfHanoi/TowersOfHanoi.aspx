@@ -20,7 +20,7 @@
 	p.clear { clear: both; }
 	h1 {text-align: left}  /* or center ? */
 	h2 {position:relative; text-align: center; bottom: 0; }
-	li {margin: 0 0 0 2em; list-style-type: square;}  /* or circle ? */
+	li {margin: 0 0 0 2em; }
 	
 	.tower { float: left; width: 170px; height: 200px; padding: 0.5em; margin: 10px; }
 
@@ -32,7 +32,7 @@
 	#disk5 { width: 80px; left: 40px; top: 10px; background: yellow}
 </style>
 	
-<script>
+<script type="text/javascript">
     $(function () {
         //$( "#disk1" ).draggable({ revert: "valid" });
         $(".disk").draggable({ revert: "invalid" });
