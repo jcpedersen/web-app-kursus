@@ -1,0 +1,5 @@
+c:\users\administrator.win-s127s1mfgjv\documents\visual studio 2010\Projects\gameHanoi\gameHanoi\bin\gameHanoi.dll
+c:\users\administrator.win-s127s1mfgjv\documents\visual studio 2010\Projects\gameHanoi\gameHanoi\bin\gameHanoi.pdb
+c:\users\administrator.win-s127s1mfgjv\documents\visual studio 2010\Projects\gameHanoi\gameHanoi\obj\Debug\ResolveAssemblyReference.cache
+c:\users\administrator.win-s127s1mfgjv\documents\visual studio 2010\Projects\gameHanoi\gameHanoi\obj\Debug\gameHanoi.dll
+c:\users\administrator.win-s127s1mfgjv\documents\visual studio 2010\Projects\gameHanoi\gameHanoi\obj\Debug\gameHanoi.pdb
