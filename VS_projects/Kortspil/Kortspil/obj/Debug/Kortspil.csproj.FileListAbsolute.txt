@@ -1,0 +1,5 @@
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\Kortspil\Kortspil\bin\Kortspil.dll
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\Kortspil\Kortspil\bin\Kortspil.pdb
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\Kortspil\Kortspil\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\Kortspil\Kortspil\obj\Debug\Kortspil.dll
+C:\Users\Administrator.WIN-N931M85P3L8\Documents\GitHub\web-app-kursus\VS_projects\Kortspil\Kortspil\obj\Debug\Kortspil.pdb
