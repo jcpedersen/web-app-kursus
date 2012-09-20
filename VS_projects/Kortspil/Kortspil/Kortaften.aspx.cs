@@ -12,18 +12,23 @@ namespace Kortspil
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlConnection sqlConn = new SqlConnection(@"Data Source=WIN-N931M85P3L8\MYSQL;Initial Catalog=dbWhist1200;Integrated Security=True");
-            sqlConn.Open();
-            SqlDataReader rs1, rs2 = null;
+            SqlConnection sql1Conn = new SqlConnection(@"Data Source=WIN-N931M85P3L8\MYSQL;Initial Catalog=dbWhist1200;Integrated Security=True");
+            sql1Conn.Open();
+            SqlDataReader rs1 = null;
+
+            SqlConnection sql2Conn = new SqlConnection(@"Data Source=WIN-N931M85P3L8\MYSQL;Initial Catalog=dbWhist1200;Integrated Security=True");
+            sql2Conn.Open();
+            SqlDataReader rs2 = null;
+            
             string select1, select2 = "";
             int id = 1; //debug
 
             select1 = "SELECT * FROM tbl_user";
-            SqlCommand sql1Command = new SqlCommand(select1, sqlConn);
+            SqlCommand sql1Command = new SqlCommand(select1, sql1Conn);
             rs1 = sql1Command.ExecuteReader();
 
-            select2 = "SELECT s.id, s.SpilNo, s.Melding, s.Vundne, FORMAT(s.Takst,2) FROM tbl_kortspil AS s WHERE s.SpilNo > 0 and s.idAften =" + id;
-            SqlCommand sql2Command = new SqlCommand(select2, sqlConn);
+            select2 = "SELECT id, SpilNo, Melding, Vundne, Takst FROM tbl_kortspil WHERE SpilNo > 0 and idAften =" + id;
+            SqlCommand sql2Command = new SqlCommand(select2, sql2Conn);
             rs2 = sql2Command.ExecuteReader();
 
             String outText = "";
@@ -46,10 +51,12 @@ namespace Kortspil
             outText += "<tr>";
             while (rs2.Read())
             {
-                rsText  = "<td>" + rs2["s.id"].ToString() + "</td>";
-                rsText += "<td>" + rs2["s.SpilNo"].ToString() + "</td>";
-                rsText += "<td>" + rs2["s.Melding"].ToString() + "</td>";
-                rsText += "<td>" + rs2["s.Vundne"].ToString() + "</td>";
+                //rsText  = "<td>" + rs2["id"].ToString() + "</td>";
+                rsText += "<td>" + rs2["SpilNo"].ToString() + "</td>";
+                rsText += "<td>" + rs2["Melding"].ToString() + "</td>";
+                rsText += "<td>" + rs2["Vundne"].ToString() + "</td>";
+                rsText += "<td>" + rs2["Takst"].ToString() + "</td>";
+                rsText += "</tr>"; // temp!
                 outText += rsText; // 
 
             }
