@@ -26,11 +26,14 @@ namespace Kortspil
             String dd_mm_yyyy = "";
             String yyyy, old_yyyy = "";
             String dd_mm = "";
+            String k_id = "";
 
-            outText += "<table><th>År</th><th>Datoer</th>";
-            outText += "<tr>";
+            outText += "<table>";
+            outText += "<thead><tr><th>År</th><th>Datoer</th></tr></thead>";
+            outText += "<tbody>";
             while (rs.Read())
             {
+                k_id = rs["id"].ToString();
                 dd_mm_yyyy = rs["Date"].ToString().Substring(0, 10);
                 yyyy = dd_mm_yyyy.Substring(6, 4);
                 if (yyyy != old_yyyy)
@@ -38,20 +41,23 @@ namespace Kortspil
                     old_yyyy = yyyy;
                     if (old_yyyy != "")
                     {
-                        outText += "</tr>"; //End Line
+                        outText += "</td></tr>"; //End Line
                     }
-                    outText += "<tr>"; //New line
-                    outText += "<td>" + yyyy + "</td>";
+                    outText += "<tr>"; // Start a new line (record)
+                    outText += "<td>" + yyyy + "</td>"; // 1st col.
+                    outText += "<td>"; // 2nd column hold all the dates with links
                 }
                 dd_mm = dd_mm_yyyy.Substring(0, 5);
-                outText += "<td>" + dd_mm + "</td>";
+
+                outText += "<a href='kortaften.aspx?Id=" + k_id + "'>";
+                outText += "" + dd_mm + "</a>,&nbsp";
             }
-            outText += "</tr>";
+            outText += "</td></tr></tbody>";
 
             rs.Close();
 
             outText += "</table>";
-            Label_HelloWorld.Text = outText;
+            Kortaften_liste.Text = outText;
         }
     }
 }

@@ -10,15 +10,24 @@
 namespace Kortspil {
     
     
-    public partial class WebForm2 {
+    public partial class Kortaften {
         
         /// <summary>
-        /// Kortaften_liste control.
+        /// KortaftenSpil control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Kortaften_liste;
+        protected global::System.Web.UI.WebControls.Label KortaftenSpil;
+        
+        /// <summary>
+        /// PlaceHolder1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolder1;
     }
 }

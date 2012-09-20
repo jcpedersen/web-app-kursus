@@ -4,6 +4,6 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <asp:Label ID="Label_HelloWorld" runat="server" Text="Label"></asp:Label>
+    <asp:Label ID="Kortaften_liste" runat="server" Text="Label"></asp:Label>
 
 </asp:Content>
