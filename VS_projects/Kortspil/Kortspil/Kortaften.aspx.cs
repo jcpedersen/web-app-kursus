@@ -12,22 +12,24 @@ namespace Kortspil
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            int id = 1; //debug
+
             SqlConnection sql1Conn = new SqlConnection(@"Data Source=WIN-N931M85P3L8\MYSQL;Initial Catalog=dbWhist1200;Integrated Security=True");
             sql1Conn.Open();
             SqlDataReader rs1 = null;
-
-            SqlConnection sql2Conn = new SqlConnection(@"Data Source=WIN-N931M85P3L8\MYSQL;Initial Catalog=dbWhist1200;Integrated Security=True");
-            sql2Conn.Open();
-            SqlDataReader rs2 = null;
-            
-            string select1, select2 = "";
-            int id = 1; //debug
+            string select1 = "";
 
             select1 = "SELECT * FROM tbl_user";
             SqlCommand sql1Command = new SqlCommand(select1, sql1Conn);
             rs1 = sql1Command.ExecuteReader();
 
-            select2 = "SELECT id, SpilNo, Melding, Vundne, Takst FROM tbl_kortspil WHERE SpilNo > 0 and idAften =" + id;
+            // 2nd connection
+            SqlConnection sql2Conn = new SqlConnection(@"Data Source=WIN-N931M85P3L8\MYSQL;Initial Catalog=dbWhist1200;Integrated Security=True");
+            sql2Conn.Open();
+            SqlDataReader rs2 = null;
+            
+            string select2 = "";
+            select2 = "SELECT id, SpilNo, Melding, Vundne, CONVERT(varchar(10), Takst, 0) as beloeb FROM tbl_kortspil WHERE SpilNo > 0 and idAften =" + id;
             SqlCommand sql2Command = new SqlCommand(select2, sql2Conn);
             rs2 = sql2Command.ExecuteReader();
 
@@ -55,11 +57,10 @@ namespace Kortspil
                 rsText += "<td>" + rs2["SpilNo"].ToString() + "</td>";
                 rsText += "<td>" + rs2["Melding"].ToString() + "</td>";
                 rsText += "<td>" + rs2["Vundne"].ToString() + "</td>";
-                rsText += "<td>" + rs2["Takst"].ToString() + "</td>";
+                rsText += "<td>" + rs2["beloeb"].ToString() + "</td>";
                 rsText += "</tr>"; // temp!
-                outText += rsText; // 
-
             }
+            outText += rsText; // 
             outText += "</tr></tbody>";
             // End of table body
 

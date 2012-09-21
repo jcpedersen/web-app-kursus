@@ -4,6 +4,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
+    <h2>Kortaften</h2>
 
     <asp:Label ID="KortaftenSpil" runat="server" Text="Label"></asp:Label>
 
