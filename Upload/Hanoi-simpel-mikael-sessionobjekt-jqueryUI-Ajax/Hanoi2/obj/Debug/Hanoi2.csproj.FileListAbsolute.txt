@@ -1,0 +1,10 @@
+C:\Projects\Hanoi2\Hanoi2\bin\Hanoi2.dll
+C:\Projects\Hanoi2\Hanoi2\bin\Hanoi2.pdb
+C:\Projects\Hanoi2\Hanoi2\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Hanoi2\Hanoi2\obj\Debug\Hanoi2.dll
+C:\Projects\Hanoi2\Hanoi2\obj\Debug\Hanoi2.pdb
+\\teach\Upload\Hanoi-simpel-mikael-sessionobjekt-jqueryUI-Ajax\Hanoi2\bin\Hanoi2.dll
+\\teach\Upload\Hanoi-simpel-mikael-sessionobjekt-jqueryUI-Ajax\Hanoi2\bin\Hanoi2.pdb
+\\teach\Upload\Hanoi-simpel-mikael-sessionobjekt-jqueryUI-Ajax\Hanoi2\obj\Debug\ResolveAssemblyReference.cache
+\\teach\Upload\Hanoi-simpel-mikael-sessionobjekt-jqueryUI-Ajax\Hanoi2\obj\Debug\Hanoi2.dll
+\\teach\Upload\Hanoi-simpel-mikael-sessionobjekt-jqueryUI-Ajax\Hanoi2\obj\Debug\Hanoi2.pdb

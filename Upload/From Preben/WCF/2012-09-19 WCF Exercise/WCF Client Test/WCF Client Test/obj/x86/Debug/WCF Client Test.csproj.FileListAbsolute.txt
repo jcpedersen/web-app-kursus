@@ -1,0 +1,6 @@
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\WCF Client Test\WCF Client Test\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\WCF Client Test\WCF Client Test\bin\Debug\WCF Client Test.exe.config
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\WCF Client Test\WCF Client Test\bin\Debug\WCF Client Test.exe
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\WCF Client Test\WCF Client Test\bin\Debug\WCF Client Test.pdb
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\WCF Client Test\WCF Client Test\obj\x86\Debug\WCF Client Test.exe
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\WCF Client Test\WCF Client Test\obj\x86\Debug\WCF Client Test.pdb

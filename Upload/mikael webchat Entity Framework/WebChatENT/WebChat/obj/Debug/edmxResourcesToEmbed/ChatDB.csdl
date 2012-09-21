@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ChatDB" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="ChatDBContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ChatLogSet" EntityType="ChatDB.ChatLog" />
+  </EntityContainer>
+  <EntityType Name="ChatLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ChatMessage" Nullable="false" MaxLength="255" />
+    <Property Type="DateTime" Name="Createdate" Nullable="false" />
+    <Property Type="String" Name="FromUserName" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="ToUserName" Nullable="false" MaxLength="30" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,10 @@
+C:\Users\Administrator.WIN-V1182GUHEOG\Documents\Visual Studio 2010\Projects\MyService\MyService\bin\MyService.dll
+C:\Users\Administrator.WIN-V1182GUHEOG\Documents\Visual Studio 2010\Projects\MyService\MyService\bin\MyService.pdb
+C:\Users\Administrator.WIN-V1182GUHEOG\Documents\Visual Studio 2010\Projects\MyService\MyService\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator.WIN-V1182GUHEOG\Documents\Visual Studio 2010\Projects\MyService\MyService\obj\Debug\MyService.dll
+C:\Users\Administrator.WIN-V1182GUHEOG\Documents\Visual Studio 2010\Projects\MyService\MyService\obj\Debug\MyService.pdb
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\MyService\MyService\bin\MyService.dll
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\MyService\MyService\bin\MyService.pdb
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\MyService\MyService\obj\Debug\ResolveAssemblyReference.cache
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\MyService\MyService\obj\Debug\MyService.dll
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\MyService\MyService\obj\Debug\MyService.pdb

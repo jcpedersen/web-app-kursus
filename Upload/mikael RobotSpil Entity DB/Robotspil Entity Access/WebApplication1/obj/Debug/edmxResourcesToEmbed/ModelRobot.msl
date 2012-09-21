@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RobotMdlStoreContainer" CdmEntityContainer="RobotMdlContainer">
+    <EntitySetMapping Name="EntRobotSet">
+      <EntityTypeMapping TypeName="IsTypeOf(RobotMdl.EntRobot)">
+        <MappingFragment StoreEntitySet="EntRobotSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Navn" ColumnName="Navn" />
+          <ScalarProperty Name="Tab" ColumnName="Tab" />
+          <ScalarProperty Name="Sejre" ColumnName="Sejre" />
+          <ScalarProperty Name="Uafgjort" ColumnName="Uafgjort" />
+          <ScalarProperty Name="Liv" ColumnName="Liv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntRobotRundeDataSet">
+      <EntityTypeMapping TypeName="IsTypeOf(RobotMdl.EntRobotRundeData)">
+        <MappingFragment StoreEntitySet="EntRobotRundeDataSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Skjold" ColumnName="Skjold" />
+          <ScalarProperty Name="Vaaben" ColumnName="Vaaben" />
+          <ScalarProperty Name="RobotId" ColumnName="RobotId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntKampSet">
+      <EntityTypeMapping TypeName="IsTypeOf(RobotMdl.EntKamp)">
+        <MappingFragment StoreEntitySet="EntKampSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Dato" ColumnName="Dato" />
+          <ScalarProperty Name="RobotId1" ColumnName="RobotId1" />
+          <ScalarProperty Name="RobotId2" ColumnName="RobotId2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntKampRundeSet">
+      <EntityTypeMapping TypeName="IsTypeOf(RobotMdl.EntKampRunde)">
+        <MappingFragment StoreEntitySet="EntKampRundeSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Rundenr" ColumnName="Rundenr" />
+          <ScalarProperty Name="Udfald" ColumnName="Udfald" />
+          <ScalarProperty Name="EntKampId" ColumnName="EntKampId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

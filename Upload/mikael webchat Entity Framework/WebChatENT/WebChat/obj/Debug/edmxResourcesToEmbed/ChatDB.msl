@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ChatDBStoreContainer" CdmEntityContainer="ChatDBContainer">
+    <EntitySetMapping Name="ChatLogSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ChatDB.ChatLog)">
+        <MappingFragment StoreEntitySet="ChatLogSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ChatMessage" ColumnName="ChatMessage" />
+          <ScalarProperty Name="Createdate" ColumnName="Createdate" />
+          <ScalarProperty Name="FromUserName" ColumnName="FromUserName" />
+          <ScalarProperty Name="ToUserName" ColumnName="ToUserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

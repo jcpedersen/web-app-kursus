@@ -1,0 +1,5 @@
+C:\Projects\MvcHowToChangeLabel\MvcHowToChangeLabel\bin\MvcHowToChangeLabel.dll
+C:\Projects\MvcHowToChangeLabel\MvcHowToChangeLabel\bin\MvcHowToChangeLabel.pdb
+C:\Projects\MvcHowToChangeLabel\MvcHowToChangeLabel\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\MvcHowToChangeLabel\MvcHowToChangeLabel\obj\Debug\MvcHowToChangeLabel.dll
+C:\Projects\MvcHowToChangeLabel\MvcHowToChangeLabel\obj\Debug\MvcHowToChangeLabel.pdb

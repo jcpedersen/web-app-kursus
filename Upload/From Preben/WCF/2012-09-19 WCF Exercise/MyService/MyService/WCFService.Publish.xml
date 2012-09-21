@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\inetpub\wwwroot\MyWCF" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/MyService.dll" publishTime="09/19/2012 15:03:00" />
+    <file relUrl="bin/MyService.pdb" publishTime="09/19/2012 15:03:00" />
+    <file relUrl="MyService.svc" publishTime="09/19/2012 15:07:17" />
+    <file relUrl="Web.config" publishTime="09/19/2012 18:01:58" />
+  </publishProfile>
+</publishData>

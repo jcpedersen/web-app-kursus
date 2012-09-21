@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<robot>
+  <navn>Daniel Nielsen</navn>
+  <runder>
+    <runde skjold="3" vaaben="2"/>
+    <runde skjold="1" vaaben="2"/>
+    <runde skjold="2" vaaben="1"/>
+    <runde skjold="3" vaaben="3"/>
+    <runde skjold="1" vaaben="3"/>
+    <runde skjold="2" vaaben="1"/>
+    <runde skjold="2" vaaben="3"/>
+    <runde skjold="1" vaaben="1"/>
+  </runder>
+  <tab>0</tab>
+  <sejre>0</sejre>
+  <uafgjort>0</uafgjort>
+  <liv>10</liv>
+</robot>

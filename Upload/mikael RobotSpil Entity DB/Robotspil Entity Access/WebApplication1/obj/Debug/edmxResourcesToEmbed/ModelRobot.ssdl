@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RobotMdl.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="RobotMdlStoreContainer">
+    <EntitySet Name="EntKampRundeSet" EntityType="RobotMdl.Store.EntKampRundeSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EntKampSet" EntityType="RobotMdl.Store.EntKampSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EntRobotRundeDataSet" EntityType="RobotMdl.Store.EntRobotRundeDataSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EntRobotSet" EntityType="RobotMdl.Store.EntRobotSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_EntKampEntKampRunde" Association="RobotMdl.Store.FK_EntKampEntKampRunde">
+      <End Role="EntKampSet" EntitySet="EntKampSet" />
+      <End Role="EntKampRundeSet" EntitySet="EntKampRundeSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RobotKamp" Association="RobotMdl.Store.FK_RobotKamp">
+      <End Role="EntRobotSet" EntitySet="EntRobotSet" />
+      <End Role="EntKampSet" EntitySet="EntKampSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RobotKamp1" Association="RobotMdl.Store.FK_RobotKamp1">
+      <End Role="EntRobotSet" EntitySet="EntRobotSet" />
+      <End Role="EntKampSet" EntitySet="EntKampSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RobotRobotRunde" Association="RobotMdl.Store.FK_RobotRobotRunde">
+      <End Role="EntRobotSet" EntitySet="EntRobotSet" />
+      <End Role="EntRobotRundeDataSet" EntitySet="EntRobotRundeDataSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="EntKampRundeSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Rundenr" Type="int" Nullable="false" />
+    <Property Name="Udfald" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="EntKampId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EntKampSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Dato" Type="datetime" Nullable="false" />
+    <Property Name="RobotId1" Type="int" Nullable="false" />
+    <Property Name="RobotId2" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EntRobotRundeDataSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Skjold" Type="int" Nullable="false" />
+    <Property Name="Vaaben" Type="int" Nullable="false" />
+    <Property Name="RobotId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EntRobotSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Navn" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Tab" Type="int" Nullable="false" />
+    <Property Name="Sejre" Type="int" Nullable="false" />
+    <Property Name="Uafgjort" Type="int" Nullable="false" />
+    <Property Name="Liv" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_EntKampEntKampRunde">
+    <End Role="EntKampSet" Type="RobotMdl.Store.EntKampSet" Multiplicity="1" />
+    <End Role="EntKampRundeSet" Type="RobotMdl.Store.EntKampRundeSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EntKampSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EntKampRundeSet">
+        <PropertyRef Name="EntKampId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RobotKamp">
+    <End Role="EntRobotSet" Type="RobotMdl.Store.EntRobotSet" Multiplicity="1" />
+    <End Role="EntKampSet" Type="RobotMdl.Store.EntKampSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EntRobotSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EntKampSet">
+        <PropertyRef Name="RobotId1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RobotKamp1">
+    <End Role="EntRobotSet" Type="RobotMdl.Store.EntRobotSet" Multiplicity="1" />
+    <End Role="EntKampSet" Type="RobotMdl.Store.EntKampSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EntRobotSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EntKampSet">
+        <PropertyRef Name="RobotId2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RobotRobotRunde">
+    <End Role="EntRobotSet" Type="RobotMdl.Store.EntRobotSet" Multiplicity="1" />
+    <End Role="EntRobotRundeDataSet" Type="RobotMdl.Store.EntRobotRundeDataSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EntRobotSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EntRobotRundeDataSet">
+        <PropertyRef Name="RobotId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

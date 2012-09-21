@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <navn>BtestUafgjort</navn>
+  <runder>
+    <runde>
+      <skjold>2</skjold>
+      <vaaben>2</vaaben>
+    </runde>
+    <runde>
+      <skjold>2</skjold>
+      <vaaben>2</vaaben>
+    </runde>
+    <runde>
+      <skjold>2</skjold>
+      <vaaben>2</vaaben>
+    </runde>
+    <runde>
+      <skjold>2</skjold>
+      <vaaben>2</vaaben>
+    </runde>
+  </runder>
+  <tab>0</tab>
+  <sejre>0</sejre>
+  <liv>5</liv>
+  <uafgjort>0</uafgjort>
+</robot>

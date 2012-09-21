@@ -1,0 +1,10 @@
+C:\BjarkesStuff\lessons\week2_c#\day4\robotspil\RobotSpil_WebApplikation\RobotSpil_WebApplikation\bin\RobotSpil_WebApplikation.dll
+C:\BjarkesStuff\lessons\week2_c#\day4\robotspil\RobotSpil_WebApplikation\RobotSpil_WebApplikation\bin\RobotSpil_WebApplikation.pdb
+C:\BjarkesStuff\lessons\week2_c#\day4\robotspil\RobotSpil_WebApplikation\RobotSpil_WebApplikation\obj\Debug\ResolveAssemblyReference.cache
+C:\BjarkesStuff\lessons\week2_c#\day4\robotspil\RobotSpil_WebApplikation\RobotSpil_WebApplikation\obj\Debug\RobotSpil_WebApplikation.dll
+C:\BjarkesStuff\lessons\week2_c#\day4\robotspil\RobotSpil_WebApplikation\RobotSpil_WebApplikation\obj\Debug\RobotSpil_WebApplikation.pdb
+C:\BjarkesStuff\lessons\week2_c#\day4_robotgame\robotspil\RobotSpil_WebApplikation\RobotSpil_WebApplikation\bin\RobotSpil_WebApplikation.dll
+C:\BjarkesStuff\lessons\week2_c#\day4_robotgame\robotspil\RobotSpil_WebApplikation\RobotSpil_WebApplikation\bin\RobotSpil_WebApplikation.pdb
+C:\BjarkesStuff\lessons\week2_c#\day4_robotgame\robotspil\RobotSpil_WebApplikation\RobotSpil_WebApplikation\obj\Debug\ResolveAssemblyReference.cache
+C:\BjarkesStuff\lessons\week2_c#\day4_robotgame\robotspil\RobotSpil_WebApplikation\RobotSpil_WebApplikation\obj\Debug\RobotSpil_WebApplikation.dll
+C:\BjarkesStuff\lessons\week2_c#\day4_robotgame\robotspil\RobotSpil_WebApplikation\RobotSpil_WebApplikation\obj\Debug\RobotSpil_WebApplikation.pdb

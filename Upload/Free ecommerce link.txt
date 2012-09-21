@@ -1,0 +1,11 @@
+PHP E-shop Open Source:
+=====================
+
+ - http://www.webappers.com/2010/07/09/15-best-free-open-source-ecommerce-platforms/
+
+
+
+.NET e-shop Open Source:
+=======================
+
+ - http://www.nopcommerce.com/demo.aspx

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="RobotMdl" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="RobotMdlContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EntRobotSet" EntityType="RobotMdl.EntRobot" />
+    <EntitySet Name="EntRobotRundeDataSet" EntityType="RobotMdl.EntRobotRundeData" />
+    <AssociationSet Name="RobotRobotRunde" Association="RobotMdl.RobotRobotRunde">
+      <End Role="Robot" EntitySet="EntRobotSet" />
+      <End Role="RobotRunde" EntitySet="EntRobotRundeDataSet" />
+    </AssociationSet>
+    <EntitySet Name="EntKampSet" EntityType="RobotMdl.EntKamp" />
+    <AssociationSet Name="RobotKamp" Association="RobotMdl.RobotKamp">
+      <End Role="Robot" EntitySet="EntRobotSet" />
+      <End Role="Kamp" EntitySet="EntKampSet" />
+    </AssociationSet>
+    <AssociationSet Name="RobotKamp1" Association="RobotMdl.RobotKamp1">
+      <End Role="Robot" EntitySet="EntRobotSet" />
+      <End Role="Kamp" EntitySet="EntKampSet" />
+    </AssociationSet>
+    <EntitySet Name="EntKampRundeSet" EntityType="RobotMdl.EntKampRunde" />
+    <AssociationSet Name="EntKampEntKampRunde" Association="RobotMdl.EntKampEntKampRunde">
+      <End Role="EntKamp" EntitySet="EntKampSet" />
+      <End Role="EntKampRunde" EntitySet="EntKampRundeSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="EntRobot">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Navn" Nullable="false" MaxLength="100" DefaultValue="" />
+    <Property Type="Int32" Name="Tab" Nullable="false" DefaultValue="0" />
+    <Property Type="Int32" Name="Sejre" Nullable="false" DefaultValue="0" />
+    <Property Type="Int32" Name="Uafgjort" Nullable="false" DefaultValue="0" />
+    <Property Type="Int32" Name="Liv" Nullable="false" DefaultValue="0" />
+    <NavigationProperty Name="RobotRunde" Relationship="RobotMdl.RobotRobotRunde" FromRole="Robot" ToRole="RobotRunde" />
+    <NavigationProperty Name="Kamp" Relationship="RobotMdl.RobotKamp" FromRole="Robot" ToRole="Kamp" />
+  </EntityType>
+  <EntityType Name="EntRobotRundeData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Skjold" Nullable="false" DefaultValue="0" />
+    <Property Type="Int32" Name="Vaaben" Nullable="false" DefaultValue="0" />
+    <NavigationProperty Name="Robot" Relationship="RobotMdl.RobotRobotRunde" FromRole="RobotRunde" ToRole="Robot" />
+    <Property Type="Int32" Name="RobotId" Nullable="false" />
+  </EntityType>
+  <Association Name="RobotRobotRunde">
+    <End Type="RobotMdl.EntRobot" Role="Robot" Multiplicity="1" />
+    <End Type="RobotMdl.EntRobotRundeData" Role="RobotRunde" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Robot">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RobotRunde">
+        <PropertyRef Name="RobotId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="EntKamp">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="Dato" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <NavigationProperty Name="Robot1" Relationship="RobotMdl.RobotKamp" FromRole="Kamp" ToRole="Robot" />
+    <Property Type="Int32" Name="RobotId1" Nullable="false" />
+    <NavigationProperty Name="Robot2" Relationship="RobotMdl.RobotKamp1" FromRole="Kamp" ToRole="Robot" />
+    <Property Type="Int32" Name="RobotId2" Nullable="false" />
+    <NavigationProperty Name="EntKampRunde" Relationship="RobotMdl.EntKampEntKampRunde" FromRole="EntKamp" ToRole="EntKampRunde" />
+  </EntityType>
+  <Association Name="RobotKamp">
+    <End Type="RobotMdl.EntRobot" Role="Robot" Multiplicity="1" />
+    <End Type="RobotMdl.EntKamp" Role="Kamp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Robot">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Kamp">
+        <PropertyRef Name="RobotId1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RobotKamp1">
+    <End Type="RobotMdl.EntRobot" Role="Robot" Multiplicity="1" />
+    <End Type="RobotMdl.EntKamp" Role="Kamp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Robot">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Kamp">
+        <PropertyRef Name="RobotId2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="EntKampRunde">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Rundenr" Nullable="false" annotation:StoreGeneratedPattern="None" DefaultValue="0" />
+    <Property Type="String" Name="Udfald" Nullable="false" MaxLength="1" DefaultValue="X" />
+    <NavigationProperty Name="Kamp" Relationship="RobotMdl.EntKampEntKampRunde" FromRole="EntKampRunde" ToRole="EntKamp" />
+    <Property Type="Int32" Name="EntKampId" Nullable="false" />
+  </EntityType>
+  <Association Name="EntKampEntKampRunde">
+    <End Type="RobotMdl.EntKamp" Role="EntKamp" Multiplicity="1" />
+    <End Type="RobotMdl.EntKampRunde" Role="EntKampRunde" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EntKamp">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EntKampRunde">
+        <PropertyRef Name="EntKampId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

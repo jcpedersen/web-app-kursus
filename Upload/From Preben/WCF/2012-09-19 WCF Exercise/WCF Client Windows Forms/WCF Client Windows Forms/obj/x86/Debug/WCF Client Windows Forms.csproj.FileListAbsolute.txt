@@ -1,0 +1,21 @@
+C:\Users\Administrator.WIN-V1182GUHEOG\Documents\Visual Studio 2010\Projects\WCF Client Windows Forms\WCF Client Windows Forms\bin\Debug\WCF Client Windows Forms.exe
+C:\Users\Administrator.WIN-V1182GUHEOG\Documents\Visual Studio 2010\Projects\WCF Client Windows Forms\WCF Client Windows Forms\bin\Debug\WCF Client Windows Forms.pdb
+C:\Users\Administrator.WIN-V1182GUHEOG\Documents\Visual Studio 2010\Projects\WCF Client Windows Forms\WCF Client Windows Forms\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator.WIN-V1182GUHEOG\Documents\Visual Studio 2010\Projects\WCF Client Windows Forms\WCF Client Windows Forms\obj\x86\Debug\WCF_Client_Windows_Forms.Properties.Resources.resources
+C:\Users\Administrator.WIN-V1182GUHEOG\Documents\Visual Studio 2010\Projects\WCF Client Windows Forms\WCF Client Windows Forms\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator.WIN-V1182GUHEOG\Documents\Visual Studio 2010\Projects\WCF Client Windows Forms\WCF Client Windows Forms\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator.WIN-V1182GUHEOG\Documents\Visual Studio 2010\Projects\WCF Client Windows Forms\WCF Client Windows Forms\obj\x86\Debug\WCF Client Windows Forms.exe
+C:\Users\Administrator.WIN-V1182GUHEOG\Documents\Visual Studio 2010\Projects\WCF Client Windows Forms\WCF Client Windows Forms\obj\x86\Debug\WCF Client Windows Forms.pdb
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\WCF Client Windows Forms\WCF Client Windows Forms\obj\x86\Debug\WCF Client Windows Forms.exe
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\WCF Client Windows Forms\WCF Client Windows Forms\obj\x86\Debug\WCF Client Windows Forms.pdb
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\WCF Client Windows Forms\WCF Client Windows Forms\bin\Debug\WCF Client Windows Forms.exe
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\WCF Client Windows Forms\WCF Client Windows Forms\bin\Debug\WCF Client Windows Forms.pdb
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\WCF Client Windows Forms\WCF Client Windows Forms\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\WCF Client Windows Forms\WCF Client Windows Forms\obj\x86\Debug\WCF_Client_Windows_Forms.Form1.resources
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\WCF Client Windows Forms\WCF Client Windows Forms\obj\x86\Debug\WCF_Client_Windows_Forms.Properties.Resources.resources
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\WCF Client Windows Forms\WCF Client Windows Forms\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\WCF Client Windows Forms\WCF Client Windows Forms\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\Users\Administrator.WIN-V1182GUHEOG\Dropbox\Shared_PmPrivate_Pm-Itucation (1)\Itucation\Exercise\2012-09-19 WCF Exercise\WCF Client Windows Forms\WCF Client Windows Forms\bin\Debug\WCF Client Windows Forms.exe.config
+C:\Users\Administrator.WIN-S127S1MFGJV\Desktop\Upload\From Preben\WCF\2012-09-19 WCF Exercise\WCF Client Windows Forms\WCF Client Windows Forms\bin\Debug\WCF Client Windows Forms.exe.config
+C:\Users\Administrator.WIN-S127S1MFGJV\Desktop\Upload\From Preben\WCF\2012-09-19 WCF Exercise\WCF Client Windows Forms\WCF Client Windows Forms\obj\x86\Debug\WCF Client Windows Forms.exe
+C:\Users\Administrator.WIN-S127S1MFGJV\Desktop\Upload\From Preben\WCF\2012-09-19 WCF Exercise\WCF Client Windows Forms\WCF Client Windows Forms\obj\x86\Debug\WCF Client Windows Forms.pdb

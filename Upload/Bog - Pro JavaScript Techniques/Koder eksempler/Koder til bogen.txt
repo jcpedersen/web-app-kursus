@@ -1,0 +1,14 @@
+
+Eksempel-koder til bogen "Pro JavaScript Techniques": 
+====================================================
+
+ - http://jspro.org/code/
+
+
+
+Kursus i JavaScript: 
+===================
+
+ - http://www.idgkurser.dk/kursus/54
+
+ - https://www.lundogbendsen.dk/undervisning/beskrivelse/LB1811/Introduktion+til+JavaScript;jsessionid=5502970A5AE60D4F00ED302102204308

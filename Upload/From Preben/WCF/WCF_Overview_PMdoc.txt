@@ -1,0 +1,21 @@
+1. Lav en ny WCF Service Application med Visual Studio
+
+2. Brug svcutil.exe til at genere de to interface filer til brug i Clienten
+
+3. Lav en Client Application, fx en Windows Forms Application
+
+4. Adder de to interface filer fra punk2 i den nye Client Application
+
+5. Start Web service Application
+
+6. Start Client Application
+
+
+Nu kan vi sende fra Client Applicationen til WCF Applicationen via WCF
+
+
+--------------------------            --------------------------
++   CLIENT Application   +            +  WCF Application
++                        + <--WCF---->+
++                        +            +
++-------------------------            --------------------------
